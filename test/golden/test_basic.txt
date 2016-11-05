@@ -1,0 +1,27 @@
+Line 1 from file "test_basic.rx.txt:1".
+Test escapes (backslash, empty): "\" ""  ... and the rest of the line. 
+Next the test file "test_include.txt" is included.
+Line 1 in test file test_included.txt.
+Line 2 in test file test_included.txt.
+...which is not terminated with a NL. This is again in file "test_basic.rx.txt".
+Next line should be three times "bar" in a row.
+barbarbar
+A line of text.
+Just some text from Mucgly.
+Source "test_include.rb" and instantiate the class defined in there.
+Print out a sum using the previously instantiated class.
+Sum of 1+2 is: 3...
+The last line in "test_basic.rx.txt"
+The name of this file is: "test_basic.rx.txt".
+We are outputting to file result/test_basic.txt and 16
+Multipass macros are output with one "#" removed each round.
+-<puts "This will be a macro execution in the next round.">-
+This comment will be consumed "".
+
+Some Mucgly module tests...
+Mucgly.puts
+Mucgly.write
+hookbeg is "-<"
+hookend is ">-"
+hookend is "\"
+End of test file...***

@@ -1,0 +1,10 @@
+Line 1 from file "-<write ifilename; write ":"; write ilinenumber>-"
+
+-<pushinput "test_skip.txt">-
+
+-<pushoutput "result/test_redirect.txt">-\
+Line 1 for test_redirect.txt.
+Line 2 for test_redirect.txt.
+-<closeoutput>-
+
+Last line...

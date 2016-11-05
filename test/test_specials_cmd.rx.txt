@@ -1,0 +1,53 @@
+-<:hook \\>-\
+Escaped chars (escape, hook hook): "\\", "\\" "\\"
+
+1: Changing hook from "\\" to "@"...
+\:hook @\ \
+Escaped chars (escape, hook hook): "\\", "\@" "\@"
+
+2: Changing hook from "\@" to "#"...
+@:hook #@\
+Escaped chars (escape, hook hook): "\\", "\#" "\#"
+
+3: Changing hook from "\#" to "\\"...
+#:hook \\#\
+Escaped chars (escape, hook hook): "\\", "\\" "\\"
+
+4: Changing escape from "\\" to "#"...
+\:hookesc #\ #
+Escaped chars (escape, hook hook): "##", "#\" "#\"
+
+5: Changing escape from "##" to "#\"...
+\:hookesc #\\\
+Escaped chars (escape, hook hook): "\\", "\\" "\\"
+
+6: Changing hooks from "\\" and "\\" to "{" and "}"...
+\:hook { }\ \
+Escaped chars (escape, hook hook): "\\", "\{" "\}"
+
+7: Changing hooks from "\{" and "\}" to "#\{" and "\}#"...
+{:hook #\{ \}#}\
+Escaped chars (escape, hook hook): "\\", "\#{" "\}#"
+
+8: Changing hookbeg from "\#{" to "{"...
+#{:hookbeg {}#\
+Escaped chars (escape, hook hook): "\\", "\{" "\}#"
+
+9: Changing hookend from "\}#" to "}"...
+{:hookend }}#\
+Escaped chars (escape, hook hook): "\\", "\{" "\}"
+
+11: Next line is comment and will disappear from output.
+{:comment This is a comment and will not appear in the output}\
+
+12: Output is diverted to another output file.
+{pushoutput( ofilename.gsub( /cmd/, "cmd2" ) )}\
+13: This is the only line to this file.
+{closeoutput}\
+
+14: Skipped item 13: and now back in original file.
+
+15: Exiting at this point so following lines are not output.
+{:exit }\
+
+16: Not output to any file.

@@ -1,0 +1,17 @@
+/* Test that mucgly can help text editor's language mode to be in sync
+   with the mucgly macros. */
+
+
+int my_func( int a1, int a2 )
+{
+  int c;
+
+  if ( a1 >= a2 )
+    c = a1 - a2;
+  else
+    c = a2 - a1;
+
+  c = c * a1;
+
+  return c;
+}

@@ -1,0 +1,11 @@
+Line 1 from file "test_specials_cli.rx.txt".
+Test escapes (backslash, empty): "/" ""  ... and the rest of the line. 
+Next the test file "test_include.txt" is included.
+Line 1 in test file test_included.txt.
+Line 2 in test file test_included.txt.
+...which is not terminated with a NL. This is again in file "test_specials_cli.rx.txt ".
+Next line should be three times "bar" in a row.
+barbarbar
+A line of text.
+Just some text from Mucgly.
+The last line in "test_specials_cli.rx.txt"

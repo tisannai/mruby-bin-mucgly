@@ -1,0 +1,11 @@
+Line @write (ilinenumber).to_s@ from file "@write ifilename@".
+Test escapes (backslash, empty): "//" "@ @" /
+ ... and the rest of the line. 
+Next the test file "test_include.txt" is included.
+@:include test_include.txt@/
+ This is again in file "@write ifilename@ ".
+Next line should be three times "bar" in a row.
+@/@foo="bar"@@./@foo@@./@foo@@puts /@foo@/
+A line of text.
+@puts  "Just some text from Mucgly."@/
+The last line in "@write ifilename@"

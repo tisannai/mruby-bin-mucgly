@@ -1,0 +1,11 @@
+The blocked lines will not be visible in the output.
+This is the last line visible before block.
+-<:block>-\
+Blocked line1.
+Blocked line2.
+Blocked line3.
+Blocked line4.
+Blocked line5.
+-<:unblock>-\
+This is the first line after block.
+Last line...

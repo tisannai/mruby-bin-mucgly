@@ -1,0 +1,32 @@
+Line 1 from file "-<write ifilename; write ":"; write ilinenumber>-".
+-<:hook \\>-\
+Test escapes (backslash, empty): "\\" "\ \ " \
+ ... and the rest of the line. 
+Next the test file "test_include.txt" is included.
+\:comment :include test_include.txt\ \
+\:include test_include.txt\ \
+ This is again in file "\write ifilename\ ".
+Next line should be three times "bar" in a row.
+\@foo="bar";\ \.@foo\ \write @foo\ \.@foo\ 
+A line of text.
+\puts "Just some text from Mucgly."\ \
+Source "test_include.rb" and instantiate the class defined in there.
+\:source test_include.rb\ \@obj = MyClass.new\ \
+Print out a sum using the previously instantiated class.
+\puts "Sum of 1+2 is: #{@obj.sum(1,2)}..."\ \
+The last line in "\write ifilename\ "
+The name of this file is: "\write ifilename\ ".
+We are outputting to file \write ofilename\  and \write olinenumber.to_s\ 
+Multipass macros are output with one "#" removed each round.
+\:hook -< >-\ \
+-<#puts "This will be a macro execution in the next round.">-
+This comment will be consumed "-</A comment>-".
+
+Some Mucgly module tests...
+-<Mucgly.puts "Mucgly.puts">--<Mucgly.write "Mucgly.write">-
+-<if hookbeg == "\-<"; write "hookbeg is \\"\-<\\""; end>-
+-<if hookend == "\>-"; write "hookend is \\"\>-\\""; end>-
+-<if hookesc == "\\\\"; write "hookend is \\"\\\\\\""; end>-
+-<sethookbeg "-{"; sethookend "}-"; sethookesc "|">-|
+-{write "End of test file..."}-|
+***

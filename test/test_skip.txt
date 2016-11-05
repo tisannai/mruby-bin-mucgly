@@ -1,0 +1,4 @@
+Line 1 from test_skip.txt.
+Line 2 from test_skip.txt.
+-<Mucgly.closeinput>-
+Line 3 from test_skip.txt.

@@ -1,0 +1,4 @@
+typedef struct hookpair_s {
+  gchar* beg;                   /**< Hookbeg for input file. */
+  gchar* end;                   /**< Hookend for input file. */
+} hookpair_t;

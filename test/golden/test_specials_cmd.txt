@@ -1,0 +1,36 @@
+Escaped chars (escape, hook hook): "\", "\" "\"
+
+1: Changing hook from "\" to "@"...
+Escaped chars (escape, hook hook): "\", "@" "@"
+
+2: Changing hook from "@" to "#"...
+Escaped chars (escape, hook hook): "\", "#" "#"
+
+3: Changing hook from "#" to "\"...
+Escaped chars (escape, hook hook): "\", "\" "\"
+
+4: Changing escape from "\" to "#"...
+Escaped chars (escape, hook hook): "#", "\" "\"
+
+5: Changing escape from "#" to "\"...
+Escaped chars (escape, hook hook): "\", "\" "\"
+
+6: Changing hooks from "\" and "\" to "{" and "}"...
+Escaped chars (escape, hook hook): "\", "{" "}"
+
+7: Changing hooks from "{" and "}" to "#{" and "}#"...
+Escaped chars (escape, hook hook): "\", "#{" "}#"
+
+8: Changing hookbeg from "#{" to "{"...
+Escaped chars (escape, hook hook): "\", "{" "}#"
+
+9: Changing hookend from "}#" to "}"...
+Escaped chars (escape, hook hook): "\", "{" "}"
+
+11: Next line is comment and will disappear from output.
+
+12: Output is diverted to another output file.
+
+14: Skipped item 13: and now back in original file.
+
+15: Exiting at this point so following lines are not output.

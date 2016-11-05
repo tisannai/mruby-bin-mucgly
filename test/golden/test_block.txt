@@ -1,0 +1,4 @@
+The blocked lines will not be visible in the output.
+This is the last line visible before block.
+This is the first line after block.
+Last line...

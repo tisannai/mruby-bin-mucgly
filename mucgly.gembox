@@ -1,0 +1,12 @@
+MRuby::GemBox.new do |conf|
+
+    # https://github.com/mattn/mruby-pcre-regexp
+    conf.gem :github => 'mattn/mruby-pcre-regexp', :branch => 'master'
+
+    # Mucgly lib.
+    conf.gem :core => "mruby-mucgly"
+
+    # Mucgly bin.
+    conf.gem :core => "mruby-bin-mucgly"
+
+end
